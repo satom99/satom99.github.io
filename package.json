@@ -12,7 +12,6 @@
     "start": "react-scripts start"
   },
   "devDependencies": {
-    "node-sass": "^4.9.3",
     "react-scripts": "^2.0.0"
   },
   "dependencies": {
@@ -24,6 +23,7 @@
   },
   "browserslist": [
     ">0.2%",
+    "not dead",
     "not ie <= 11",
     "not op_mini all"
   ]

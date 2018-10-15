@@ -21,8 +21,10 @@ const styles = theme => ({
   layout: {
     width: "auto",
     display: "block",
+    marginTop: theme.spacing.unit * 2,
     marginLeft: theme.spacing.unit * 2,
     marginRight: theme.spacing.unit * 2,
+    marginBottom: theme.spacing.unit * 2,
     [theme.breakpoints.up(500 + theme.spacing.unit * 2 * 2)]: {
       width: 500,
       marginLeft: "auto",
@@ -33,7 +35,6 @@ const styles = theme => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: theme.spacing.unit * 8,
     padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 3}px ${theme.spacing.unit * 3}px`,
   },
   avatar: {
@@ -188,7 +189,8 @@ export class App extends Component {
                   <ChevronRightIcon/>
                 </ListItem>
                 <Typography className={classes.listFooter} component="h1" variant="caption">
-                  Amongst other projects hosted on <a href="https://github.com/satom99">GitHub</a>.
+                  Amongst other projects hosted on {""}
+                  <a href="https://github.com/satom99" target="_blank">GitHub</a>.
                 </Typography>
               </List>
             }
@@ -197,7 +199,6 @@ export class App extends Component {
               <List className={classes.list} dense>
                 <ListItem
                   href="mailto:contact@satom.me"
-                  target="_blank"
                   component="a"
                   button
                 >
