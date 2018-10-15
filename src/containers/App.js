@@ -189,8 +189,7 @@ export class App extends Component {
                   <ChevronRightIcon/>
                 </ListItem>
                 <Typography className={classes.listFooter} component="h1" variant="caption">
-                  Amongst other projects hosted on {""}
-                  <a href="https://github.com/satom99" target="_blank">GitHub</a>.
+                  Amongst other projects hosted on <a href="https://github.com/satom99">GitHub</a>.
                 </Typography>
               </List>
             }
